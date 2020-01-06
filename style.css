@@ -133,7 +133,8 @@ img {
     grid-gap: 20px;
     /* we dont have to specify the temple columns for each media query */
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .box {
@@ -151,4 +152,27 @@ img {
     grid-gap: 30px;
     grid-template-columns: repeat(2, 1fr);
     padding: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Portfolio */
+.portfolio {
+    display: grid;
+    grid-gap: 20px;
+    /* we dont have to specify the temple columns for each media query */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.portfolio img {
+    width: 100%;
+    box-shadow: var(--shadow);
+}
+
+/* Footer */
+footer {
+    margin-top: 2rem;
+    background-color: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 1rem;
 }
