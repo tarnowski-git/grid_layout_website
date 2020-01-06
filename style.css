@@ -1,0 +1,32 @@
+/* CSS Variables */
+:root {
+    --primary: #dddddd;
+    --dark: #333333;
+    --light: #ffffff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+}
+
+body {
+    background: #ccc;
+    margin: 30px 50px;
+    line-height: 1.4;
+}
+
+.btn {
+    background: var(--dar);
+    color: var(--light);
+    /* rem is a multiplier for the root HTML font size, whitch is 16px default */
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: 0px;
+}
+
+img {
+    max-width: 100%;
+}
