@@ -13,7 +13,7 @@ An example website based on responsive Grid CSS layout (grid-template-areas) als
 
 ## Sources
 
-This game is based on [Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA) Tutorial.
+This website is based on [Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA) Tutorial.
 
 ## License
 
