@@ -19,7 +19,7 @@ body {
 }
 
 .btn {
-    background: var(--dar);
+    background: var(--dark);
     color: var(--light);
     /* rem is a multiplier for the root HTML font size, whitch is 16px default */
     padding: 0.6rem 1.3rem;
@@ -56,7 +56,6 @@ img {
     text-decoration: none;
     padding: 0.8rem;
     text-align: center;
-
     text-transform: uppercase;
     font-size: 1.1rem;
     box-shadow: var(--shadow);
@@ -65,4 +64,65 @@ img {
 .main-nav a:hover {
     background: var(--dark);
     color: var(--light);
+}
+
+/* Top Container */
+.top-container {
+    display: grid;
+    grid-gap: 20px;
+    /* the grid system is two-dimensional */
+    grid-template-areas:
+        "showcase showcase top-box-a"
+        "showcase showcase top-box-b";
+}
+
+/* Showcase */
+.showcase {
+    grid-area: showcase;
+    min-height: 400px;
+    background: url("img/iphone-dark-notebook-pen-34140.jpg");
+    /* minimalise the zoom of image */
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    /* use flexbox into this div */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    box-shadow: var(--shadow);
+}
+
+.showcase h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+    color: var(--light);
+}
+
+.showcase p {
+    font-size: 1.3rem;
+    margin-top: 0;
+    color: var(--light);
+}
+
+/* Top Box */
+.top-box {
+    background: var(--primary);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+}
+
+.top-box .price {
+    font-size: 2.5rem;
+}
+
+.top-box-a {
+    grid-area: top-box-a;
+}
+
+.top-box-b {
+    grid-area: top-box-b;
 }
